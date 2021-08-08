@@ -26,9 +26,7 @@ variable "assets_bucket_name" {
   default = "plate_assets"
 }
 
-# variable "firebase_account" {}
-
-# variable "cloud_storage_account" {}
+variable "firebase_sa" {}
 
 variable "database_instance_name" {
   default = "plate"
