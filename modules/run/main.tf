@@ -41,6 +41,10 @@ resource "google_cloud_run_service" "api" {
           name = "ASSETS_NAME"
           value = var.assets_name
         }
+        env {
+          name = "ACCESS_CONTROL_ALLOW_ORIGIN"
+          value = var.allow_origin
+        }
       }
     }
     metadata {

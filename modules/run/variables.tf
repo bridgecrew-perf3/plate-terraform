@@ -19,3 +19,5 @@ variable "db_name" {}
 variable "firebase_sa" {}
 
 variable "assets_name" {}
+
+variable "allow_origin" {}
