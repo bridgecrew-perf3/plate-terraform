@@ -36,7 +36,7 @@ module "run" {
   source                            = "../../modules/run"
   name                              = var.name
   region                            = var.region
-  image                             = "gcr.io/${var.project}/${var.name}-api:cefdaf5f91865659f9a6cda3d03ab24f5d25c92e"
+  image                             = "gcr.io/${var.project}/${var.name}-api:51fcc419f2fa5af89a4feda3a724f3869a858f6d"
   database_instance_connection_name = module.sql.connection_name
   env                               = var.env
   db_driver                         = "mysql"
@@ -45,5 +45,5 @@ module "run" {
   db_name                           = module.sql.database_name
   firebase_sa                       = var.firebase_sa
   assets_name                       = var.assets_bucket_name
-  allow_origin                      = "https://plate-97baf.web.app"
+  allow_origin                      = "https://plate-web.vercel.app"
 }
